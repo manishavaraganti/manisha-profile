@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/manisha-profile/static/css/main.bbd36ee8.css",
+    "main.js": "/manisha-profile/static/js/main.37c144ee.js",
+    "static/js/453.64e88f64.chunk.js": "/manisha-profile/static/js/453.64e88f64.chunk.js",
+    "static/media/ecommerce2.png": "/manisha-profile/static/media/ecommerce2.ba1bd94f961f9e2834e1.png",
+    "static/media/profile2.jpg": "/manisha-profile/static/media/profile2.d9a86bdcb7efcc3d1853.jpg",
+    "static/media/profile1.jpg": "/manisha-profile/static/media/profile1.bde3a648f105de585dc4.jpg",
+    "static/media/web1.jpg": "/manisha-profile/static/media/web1.ff97320788d8e15f8487.jpg",
+    "static/media/static.jpg": "/manisha-profile/static/media/static.3da981efeb017077c7f1.jpg",
+    "static/media/landing3.jpeg": "/manisha-profile/static/media/landing3.e233e46d97b50f5beac3.jpeg",
+    "static/media/landing1.jpeg": "/manisha-profile/static/media/landing1.f242cfbde85bd1259d70.jpeg",
+    "static/media/landing2.jpeg": "/manisha-profile/static/media/landing2.80ea597bc04b68364103.jpeg",
+    "static/media/landing.jpeg": "/manisha-profile/static/media/landing.7ca7a3d847287c8d867a.jpeg",
+    "static/media/payment1.png": "/manisha-profile/static/media/payment1.d7a58eed5177f81aae81.png",
+    "static/media/api1.png": "/manisha-profile/static/media/api1.23656e100b3058f815a3.png",
+    "static/media/responsive1.webp": "/manisha-profile/static/media/responsive1.2464354ebbb5039d8bb2.webp",
+    "index.html": "/manisha-profile/index.html",
+    "main.bbd36ee8.css.map": "/manisha-profile/static/css/main.bbd36ee8.css.map",
+    "main.37c144ee.js.map": "/manisha-profile/static/js/main.37c144ee.js.map",
+    "453.64e88f64.chunk.js.map": "/manisha-profile/static/js/453.64e88f64.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bbd36ee8.css",
+    "static/js/main.37c144ee.js"
+  ]
+}
