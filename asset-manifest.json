@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/manisha-profile/static/css/main.cb59483f.css",
-    "main.js": "/manisha-profile/static/js/main.7b6ea093.js",
+    "main.css": "/manisha-profile/static/css/main.24e275b1.css",
+    "main.js": "/manisha-profile/static/js/main.fcfe37ff.js",
     "static/js/453.64e88f64.chunk.js": "/manisha-profile/static/js/453.64e88f64.chunk.js",
     "static/media/ecommerce2.png": "/manisha-profile/static/media/ecommerce2.ba1bd94f961f9e2834e1.png",
     "static/media/profile2.jpg": "/manisha-profile/static/media/profile2.d9a86bdcb7efcc3d1853.jpg",
@@ -16,12 +16,12 @@
     "static/media/api1.png": "/manisha-profile/static/media/api1.23656e100b3058f815a3.png",
     "static/media/responsive1.webp": "/manisha-profile/static/media/responsive1.2464354ebbb5039d8bb2.webp",
     "index.html": "/manisha-profile/index.html",
-    "main.cb59483f.css.map": "/manisha-profile/static/css/main.cb59483f.css.map",
-    "main.7b6ea093.js.map": "/manisha-profile/static/js/main.7b6ea093.js.map",
+    "main.24e275b1.css.map": "/manisha-profile/static/css/main.24e275b1.css.map",
+    "main.fcfe37ff.js.map": "/manisha-profile/static/js/main.fcfe37ff.js.map",
     "453.64e88f64.chunk.js.map": "/manisha-profile/static/js/453.64e88f64.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb59483f.css",
-    "static/js/main.7b6ea093.js"
+    "static/css/main.24e275b1.css",
+    "static/js/main.fcfe37ff.js"
   ]
 }
