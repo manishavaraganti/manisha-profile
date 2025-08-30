@@ -1,0 +1,180 @@
+:root { --accent:#00eeff; }
+
+/* prevent overlap with fixed navbar and any sideways scroll */
+html,body{ margin:0; padding:0; overflow-x:hidden; }
+
+.home {
+  width: 100%;
+  min-height: 100vh; /* ✅ dynamic height */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 100px;
+  color: #fff;
+  position: relative;
+  box-sizing: border-box;
+
+  /* ✅ Desktop: gradient + right image */
+  background: linear-gradient(
+      to left,
+      #fff 40%,
+      rgba(255, 255, 255, 0) 70%
+    ),
+    url("../assets/profile2.jpg") no-repeat right center;
+  background-size: contain;
+}
+
+
+.home::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    black,  /* Left transparent */
+    black,  /* Middle transparent */
+    rgba(255, 255, 255, 0)   /* Right transparent */
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+.home-content, .icons{ position:relative; z-index:1; }
+
+.home-content{ max-width:600px; margin-left:8%; }
+.home-content h1{ font-size:56px; font-weight:700; }
+.home-content h3{ font-size:32px; color:var(--accent); margin:10px 0; }
+.home-content p{ font-size:16px; margin:20px 0 40px; line-height:1.6; }
+
+/* OUTLINE buttons that fill L→R on hover */
+.btn-box{ display:flex; gap:20px; }
+.btn-box a{
+  position:relative; display:inline-block;
+  padding:12px 30px; border:2px solid var(--accent);
+  border-radius:30px; background:transparent; color:var(--accent);
+  font-weight:700; text-decoration:none; overflow:hidden; z-index:0;
+  transition: color .3s ease;
+}
+.btn-box a::before{
+  content:""; position:absolute; inset:0;
+  width:0%; background:var(--accent); z-index:-1;
+  transition: width .35s ease; /* smooth fill */
+}
+.btn-box a:hover{ color:#000; }
+.btn-box a:hover::before{ width:100%; }
+
+.icons{
+  position:absolute; bottom:40px; left:8%;
+  display:flex; gap:20px;
+}
+.icons a{ font-size:24px; color:#fff; transition:.3s; }
+.icons a:hover{ color:var(--accent); }
+/* ✅ Fix mobile responsiveness and image cropping */
+@media (max-width: 768px) {
+  .home {
+    display: flex;
+    flex-direction: column; /* ✅ Stack vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 100px 5% 40px;
+
+    /* ✅ Full-width background image */
+    background: none; /* remove gradient + background image */
+    background-color: #000; /* fallback black bg */
+    height: auto;
+    min-height: auto;
+    text-align: center;
+  }
+
+  /* ✅ Make profile image full width on mobile */
+  .home::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 300px;
+    background: url("../assets/profile2.jpg") no-repeat center center;
+    background-size: cover;
+    border-radius: 0;
+    margin-bottom: 20px;
+  }
+
+  .home-content {
+    max-width: 90%;
+    margin: 0 auto;
+    z-index: 2;
+  }
+
+  .home-content h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+
+  .home-content h3 {
+    font-size: 22px;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+
+  .home-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    padding: 0 10px;
+  }
+
+  /* ✅ Buttons neatly stacked */
+  .btn-box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .btn-box a {
+    width: 80%;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 15px;
+  }
+
+
+  /* ✅ Fix icons alignment */
+  .icons {
+    position: relative;
+    margin-top: 25px;
+    left: 0;
+    justify-content: center;
+    gap: 25px;
+  }
+}
+
+/* ✅ Extra small devices */
+@media (max-width: 480px) {
+  .home {
+    padding: 100px 5% 30px;
+  }
+
+  .home-content h1 {
+    font-size: 24px;
+  }
+
+  .home-content h3 {
+    font-size: 18px;
+  }
+
+  .home-content p {
+    font-size: 13px;
+  }
+
+  .btn-box a {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .icons {
+    gap: 20px;
+    margin-top: 20px;
+  }
+}
